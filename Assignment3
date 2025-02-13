@@ -1,0 +1,10 @@
+sed -e 's/zoo//gi' /Users/jacobshantz/Downloads/pandas.txt > /Users/jacobshantz/Downloads/panda_zoos.txt
+sort -k 2 /Users/jacobshantz/Downloads/pandas.txt | awk '{print $1,$4,$2}' > /Users/jacobshantz/Downloads/sorted_pandas.txt
+sort -k 5  /Users/jacobshantz/Downloads/pandas.txt > /Users/jacobshantz/Downloads/pandas_A2Z.txt
+sed "s/female/F/;s/male/M/" /Users/jacobshantz/Downloads/pandas.txt > /Users/jacobshantz/Downloads/panda_m_f.txt 
+grep 'October' /Users/jacobshantz/Downloads/pandas.txt | grep -c 'female' 
+grep -i -n "[A-Z]" /Users/jacobshantz/Downloads/pandas.txt > /Users/jacobshantz/Downloads/panda_names.txt 
+sed -n '1p;6p;17p' /Users/jacobshantz/Downloads/pandas.txt > /Users/jacobshantz/Downloads/lines_1_6_17.txt
+grep -i "x" /Users/jacobshantz/Downloads/pandas.txt > /Users/jacobshantz/Downloads/x_lines.txt 
+sort -u -k 5 /Users/jacobshantz/Downloads/pandas.txt |awk '{print $5}' > /Users/jacobshantz/Downloads/unique_places.txt
+sort -n -k 4 /Users/jacobshantz/Downloads/pandas.txt | awk 'NR==1, NR==5 {print NR,$1,$4}' > /Users/jacobshantz/Downloads/young_pandas.txt
