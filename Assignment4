@@ -1,0 +1,10 @@
+makeblastdb -in /Users/jacobshantz/Downloads/database_mystery_transcripts.fasta -dbtype nucl -out mystery_transcripts
+makeblastdb -in /Users/jacobshantz/Downloads/database_mystery_proteins.fasta -dbtype prot -out mystery_proteins
+ blastn -db /Users/jacobshantz/BlastDatabase/mystery_transcripts -query /Users/jacobshantz/Downloads/query_mystery_nucleotide.fasta  -outfmt 7 -max_hsps 5 -evalue 1e-3 -out results.out
+91.965
+df -h | awk '$3 >=90 {print $3}' /Users/jacobshantz/results.out > /Users/jacobshantz/Downloads/most_similar.txt
+ blastp -db /Users/jacobshantz/mystery_proteins -query /Users/jacobshantz/Downloads/query_mystery_protein.fasta  -outfmt 7 -max_hsps 15 -evalue 1e-5 -out results_proteins.out
+ 87.805
+ 	Coffea arabica
+  	Gardenia jasminoides
+  	 	putative catalase [Gardenia jasminoides]
