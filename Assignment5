@@ -1,0 +1,4 @@
+3.1. raxmlHPC-HYBRID-AVX -T 4 -s infile -N autoMRE -n result -f a -p 12345 -x 12345 -m PROTCATJTT 
+3.2. muscle -seqtype auto -in infile.fasta -maxiters 16 -log logfile.txt -weight1 clustalw -cluster1 upgmb -sueff 0.1 -root1 pseudo -maxtrees 1 -weight2 clustalw -cluster2 upgmb -sueff 0.1 -root2 pseudo -objscore sp -noanchors -fastaout output.fasta
+4. Sequences from Syconycteris australis are the most similar to the "Flying Fox"
+5. Such a phylogeny might be useful in recent times because it might help to identify other animals that might be more vulnerable a disease (like bird flu) than others.
